@@ -1,21 +1,65 @@
-document.getElementById("btn1").addEventListener("click", async function() {
-  const text = document.getElementById("textInput").value.trim();
-  const lang = document.getElementById("languageSelect").value;
-  if (!text) return alert("Please enter some text first!");
+ // Hide intro after 2.5 seconds
+        setTimeout(() => {
+            document.getElementById('introScreen').classList.add('fade-out');
+            setTimeout(() => {
+                document.getElementById('introScreen').style.display = 'none';
+                document.getElementById('chatInput').focus();
+            }, 800);
+        }, 2500);
 
-  const res = await fetch("/speak", {
-    method: "POST",
-    headers: { "Content-Type": "application/json" },
-    body: JSON.stringify({ text, lang })
-  });
+        function quickAction(text) {
+            document.getElementById('chatInput').value = text;
+            sendMessage();
+        }
 
-  const data = await res.json();
-  if (data.status === "success") {
-    const audio = document.getElementById("audioPlayer");
-    audio.src = data.file + "?t=" + new Date().getTime();
-    audio.hidden = false;
-    audio.play();
-  } else {
-    alert("Error: " + data.error);
-  }
-});
+        function handleKeyPress(event) {
+            if (event.key === 'Enter') {
+                sendMessage();
+            }
+        }
+
+        async function sendMessage() {
+            const input = document.getElementById('chatInput');
+            const text = input.value.trim();
+
+            if (!text) return;
+
+            addMessage(text, 'user');
+            input.value = '';
+
+            const typingIndicator = document.getElementById('typingIndicator');
+            typingIndicator.style.display = 'block';
+            scrollToBottom();
+
+            try {
+                const response = await fetch('/ask', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json',
+                    },
+                    body: JSON.stringify({ question: text })
+                });
+
+                const data = await response.json();
+                typingIndicator.style.display = 'none';
+                addMessage(data.answer, 'bot');
+
+            } catch (error) {
+                typingIndicator.style.display = 'none';
+                addMessage('⚠️ Connection error. Please try again.', 'bot');
+            }
+        }
+
+        function addMessage(text, sender) {
+            const container = document.getElementById('chatMessages');
+            const messageDiv = document.createElement('div');
+            messageDiv.className = sender === 'user' ? 'message user-msg' : 'message bot-msg';
+            messageDiv.textContent = text;
+            container.appendChild(messageDiv);
+            scrollToBottom();
+        }
+
+        function scrollToBottom() {
+            const container = document.getElementById('chatMessages');
+            container.scrollTop = container.scrollHeight;
+        }
