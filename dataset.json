@@ -552,12 +552,12 @@
     "output": null
   },
   {
-    "input": "What is Jelly Fish?",
-    "output": null
+    "input": "What is Rose Petal?",
+    "output": "Rose Petal tissues are made to be ultra-soft, minimizing friction and irritation on delicate areas like the face"
   },
   {
     "input": "What is Jello Bello?",
-    "output": null
+    "output": "Jello Bello is a brand of soft, fruity, and chewy jelly candies, also known as the brand BP Sweets Jello Bello"
   },
   {
     "input": "What is Berries?",
@@ -569,27 +569,27 @@
   },
   {
     "input": "What is Amrood Jelly?",
-    "output": null
+    "output": "Amrood jelly is a sweet, chewy candy made from guava fruit (amrood) flavor, sugar, and other ingredients"
   },
   {
     "input": "What is Fizzi O?",
-    "output": null
+    "output": "Fizzy-O Jelly is a candy made by the brand Candyland that consists of soft, chewy jelly pieces with a fizzy, tangy taste"
   },
   {
-    "input": "What is Anda?",
-    "output": null
+    "input": "What is Jiggles jelly?",
+    "output": "Jiggles are made in many fun shapes like eggs, teeth, and pizzas, and come in various flavors like peach, berry, and mixed fruit"
   },
   {
-    "input": "What is ABC?",
-    "output": null
+    "input": "What is ABC jelly?",
+    "output": "ABC jelly is a fruit-flavored, soft, chewy candies shaped like alphabet letters"
   },
   {
     "input": "What is Chilli Milli?",
-    "output": null
+    "output": "CANDYLAND Chili Mili 30 gm x 24 PACK • Halal Meat & Grocery ...Chilli Milli is a popular Pakistani jelly candy known for its unique sweet, sour, and spicy flavor, with a chewy, gel-like texture"
   },
   {
     "input": "What is Twisto?",
-    "output": null
+    "output": "Twisto candy is a soft, chewy jelly candy that comes in a variety of fruity and tangy flavors"
   },
   {
     "input": "What is Polly?",
@@ -669,15 +669,15 @@
   },
   {
     "input": "What is Mughlia?",
-    "output": null
+    "output": "Mughlia nimco is a spicy, crunchy, South Asian savory snack mix inspired by the culinary traditions of the Mughal Empire"
   },
   {
     "input": "What is Lunch Time?",
-    "output": null
+    "output": "Lunch time nimco is a marketing term for a specific mix of spicy, savory Pakistani snacks designed to be eaten during a mealtime, not just as a casual snack"
   },
   {
     "input": "What is Ballay Ballay?",
-    "output": null
+    "output": "Ballay Ballay Nimco is a Pakistani savory snack mix, known for its crispy and spicy flavors"
   },
   {
     "input": "What is Shoop Chicken?",
@@ -729,15 +729,15 @@
   },
   {
     "input": "What is Sunsilk?",
-    "output": null
+    "output": "Sunsilk shampoo is a line of hair care products from the Unilever brand, known for being an affordable and popular hair-care brand"
   },
   {
     "input": "What is Head n Shoulder?",
-    "output": null
+    "output": "Head n Shoulder is anti-dandruff shampoo brand"
   },
   {
-    "input": "What is Tresseme?",
-    "output": null
+    "input": "What is Tresemme?",
+    "output": "TRESemme is a global hair care brand, owned by Unilever, that offers a wide range of professional-quality shampoos, conditioners, and styling products designed for at-home use"
   },
   {
     "input": "What is Lifebouy Shampoo?",
@@ -1336,8 +1336,8 @@
     "output": "The price of Gummy Bear is 10rs"
   },
   {
-    "input": "What is the price of Jelly Fish?",
-    "output": "The price of Jelly Fish is 10rs"
+    "input": "What is the price of Rose Petal?",
+    "output": "The price of Rose Petal is 200rs"
   },
   {
     "input": "What is the price of Jello Bello?",
@@ -1360,11 +1360,11 @@
     "output": "The price of Fizzi O is 10rs"
   },
   {
-    "input": "What is the price of Anda?",
-    "output": "The price of Anda is 10rs"
+    "input": "What is the price of Jiggles?",
+    "output": "The price of jiggle is 10rs"
   },
   {
-    "input": "What is the price of ABC?",
+    "input": "What is the price of ABC jelly?",
     "output": "The price of ABC is 10rs"
   },
   {
@@ -1520,8 +1520,8 @@
     "output": "The price of Head n Shoulder is 350rs"
   },
   {
-    "input": "What is the price of Tresseme?",
-    "output": "The price of Tresseme is 350rs"
+    "input": "What is the price of Tresemme?",
+    "output": "The price of Tresemme is 350rs"
   },
   {
     "input": "What is the price of Lifebouy Shampoo?",
@@ -2120,8 +2120,8 @@
         "output":"The manufacturer of Gummy Bear is CandyLand"
     },
     {
-        "input":"Who is the manufacturer of Jelly Fish?",
-        "output":"The manufacturer of Jelly Fish is CandyLand"
+        "input":"Who is the manufacturer of Rose Petal?",
+        "output":"The manufacturer of Rose Petal is Packages Group"
     },
     {
         "input":"Who is the manufacturer of Jello Bello?",
@@ -2144,12 +2144,12 @@
         "output":"The manufacturer of Fizzi O is Ismail"
     },
     {
-        "input":"Who is the manufacturer of Anda?",
-        "output":"The manufacturer of Anda is Commodity"
+        "input":"Who is the manufacturer of Jiggles?",
+        "output":"The manufacturer of jiggle is Commodity"
     },
     {
-        "input":"Who is the manufacturer of ABC?",
-        "output":"The manufacturer of ABC is Local"
+        "input":"Who is the manufacturer of ABC jelly?",
+        "output":"The manufacturer of ABC is CandyLand"
     },
     {
         "input":"Who is the manufacturer of Chilli Milli?",
@@ -2304,8 +2304,8 @@
         "output":"The manufacturer of Head n Shoulder is P&G"
     },
     {
-        "input":"Who is the manufacturer of Tresseme?",
-        "output":"The manufacturer of Tresseme is Unilever"
+        "input":"Who is the manufacturer of Tresemme?",
+        "output":"The manufacturer of Tresemme is Unilever"
     },
     {
         "input":"Who is the manufacturer of Lifebouy Shampoo?",
