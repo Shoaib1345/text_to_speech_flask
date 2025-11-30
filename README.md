@@ -26,7 +26,7 @@ pip install pyngrok
 pip install datasets
 ```
 ``` 
-pip install 
+pip install transformers[torch]
 ```
 # 3️⃣ Run the Flask app
 python app.py
